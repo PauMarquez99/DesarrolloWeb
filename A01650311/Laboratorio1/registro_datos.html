@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Datos</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de Datos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/A01650311/index.html">Index</a></li>
+            <li><a href="fav_places.html">Lugares Favoritos</a></li>
+            <li><a href="registro_datos.html">Registro de Datos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="datos_exito.html" autocomplete="on">
+            <p>
+                Todos los campos marcados por * son obligatorios.
+            </p>
+            <section>
+                <h3 style="color:#4d88ff;">
+                    Datos Personales
+                </h3>
+                <p>
+                    <label for="nombre">Nombre*: </label><br>
+                    <input type="text" id="nombre" name="nombre" required><br>
+                </p>
+                <p>
+                    <label for="email">E-mail*: </label><br>
+                    <input type="email" id="email" name="email" required><br>
+                </p>
+                <p>
+                    <label for="pais" autocomplete="on">País de Orígen: </label><br>
+                    <input type="text" id="pais" name="pais"><br>
+                </p>
+                <p>
+                    <label for="usuario">Usuario*:</label> <br>
+                    <input type="text" id="usuario" name="usuario" required><br>
+                </p>
+                <p>
+                    <label form="contra">Contraseña(mínimo de 6 caracteres)*: </label><br>
+                    <input type="password" id="contra" name="contra" minlength="6" required> <br><br>
+                </p>
+            </section>
+            <section>
+                <h3 style="color:#4d88ff;">
+                    Preferencias del Usuario
+                </h3>
+
+                <label for="visitados">Lugares de Interés:</label>
+                <ul style="list-style-type:none">
+                    <li>
+                        <input type="checkbox" id="londres" name="visitados" value="londres">
+                        <label for="londres">Londres</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="telaviv" name="visitados" value="telaviv">
+                        <label for="telaviv">Tel Aviv</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="guadalajara" name="visitados" value="guadalajara">
+                        <label for="guadalajara">Guadalajara</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="sanfrancisco" name="visitados" value="sanfrancisco">
+                        <label for="sanfrancisco">San Francisco</label><br>
+                    </li>
+                </ul>
+                <p>
+                    <label for="lenguaje">Lenguaje de Preferencia*: </label>
+                    <select id="lenguaje" name="lenguaje" required>
+                        <option value="">Seleccionar</option>
+                        <option value="python">Python</option>
+                        <option value="cplusplus">C++</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">PHP</option>
+                        <option value="go">GO</option>
+                        <option value="otroLenguaje">Otro</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="contactoCorreo">Desea ser contactado por correo: </label><br>
+                    <input type="radio" id="contactoCorreoSi" name="contactoCorreo" value="si" checked>
+                    <label for="contactoCorreoSi">Sí</label>
+                    <input type="radio" id="contactoCorreoNo" name="contactoCorreo" value="no" >
+                    <label for="contactoCorreoNo">No</label>
+                    <input type="hidden" name="idioma" value="espanol">
+                </p>
+
+            </section>
+            <section>
+                <h3>
+                    Comentarios del Usuario
+                </h3>
+                <textarea id="comUsuario" name="comUsuario" placeholder="Describa brevemente que le gustaría ver en la página..." rows="4" cols="50"></textarea>
+            </section>
+            <section>
+                <input type="submit" value="Enviar">
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <br>
+        &copy;2022 Paulina Márquez <br/>
+    </footer>
+</body>
