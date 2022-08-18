@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,7 @@
                     <input type="email" id="email" name="email" required><br>
                 </p>
                 <p>
-                    <label for="pais" autocomplete="on">País de Orígen: </label><br>
+                    <label for="pais">País de Orígen: </label><br>
                     <input type="text" id="pais" name="pais"><br>
                 </p>
                 <p>
@@ -44,7 +44,7 @@
                     <input type="text" id="usuario" name="usuario" required><br>
                 </p>
                 <p>
-                    <label form="contra">Contraseña(mínimo de 6 caracteres)*: </label><br>
+                    <label for="contra">Contraseña(mínimo de 6 caracteres)*: </label><br>
                     <input type="password" id="contra" name="contra" minlength="6" required> <br><br>
                 </p>
             </section>
@@ -53,7 +53,9 @@
                     Preferencias del Usuario
                 </h3>
 
-                <label for="visitados">Lugares de Interés:</label>
+                <p>
+                    Lugares de Interés:
+                </p>
                 <ul style="list-style-type:none">
                     <li>
                         <input type="checkbox" id="londres" name="visitados" value="londres">
@@ -86,14 +88,14 @@
                     </select>
                 </p>
                 <p>
-                    <label for="contactoCorreo">Desea ser contactado por correo: </label><br>
-                    <input type="radio" id="contactoCorreoSi" name="contactoCorreo" value="si" checked>
-                    <label for="contactoCorreoSi">Sí</label>
-                    <input type="radio" id="contactoCorreoNo" name="contactoCorreo" value="no" >
-                    <label for="contactoCorreoNo">No</label>
-                    <input type="hidden" name="idioma" value="espanol">
+                    Desea ser contactado por correo: 
                 </p>
-
+                <input type="radio" id="contactoCorreoSi" name="contactoCorreo" value="si" checked>
+                <label for="contactoCorreoSi">Sí</label>
+                <input type="radio" id="contactoCorreoNo" name="contactoCorreo" value="no" >
+                <label for="contactoCorreoNo">No</label>
+                <input type="hidden" name="idioma" value="espanol">
+                
             </section>
             <section>
                 <h3>
