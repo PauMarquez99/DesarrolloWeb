@@ -1,0 +1,20 @@
+div{
+    background-color: rgb(32, 80, 133);
+    text-align:center;
+    width: 80%;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 15px;
+
+}
+
+p {
+color: rgb(32, 80, 133);
+background-color: rgb(77, 184, 203);
+font-size: 2 rem;
+}
+
+#texto:hover{
+    color: white;
+    font-size: 2.2rem;
+}
