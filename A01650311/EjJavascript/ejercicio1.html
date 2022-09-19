@@ -11,10 +11,12 @@ window.onload = function() {
 	//console.log("Numero de enlaces:", enlaces.length)
 	document.getElementById('output1').innerHTML = "Numero de enlaces: " + enlaces.length;
 
+
 	// Direccion del penultimo enlace
 	var penultimoEnlace = enlaces[enlaces.length-2];
 	//console.log("Direccion penultimo enlace:", penultimoEnlace)
 	document.getElementById('output2').innerHTML = "Direccion penultimo enlace: " + penultimoEnlace;
+
 
 	// Numero de enlaces que apuntan a http://prueba
 	var contador = 0;
@@ -26,6 +28,7 @@ window.onload = function() {
 	//console.log("Numero de enlaces que apuntan a prueba:", contador)
 	document.getElementById('output3').innerHTML = "Numero de enlaces que apuntan a prueba: " + contador;
 
+	
 	// Numero de enlaces del tercer p�rrafo
 	var parrafos = document.getElementsByTagName("p");
 	enlacesP = parrafos[2].getElementsByTagName("a");
