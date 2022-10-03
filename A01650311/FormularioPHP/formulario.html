@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laboratorio PHP</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./styles.css"/>
+    </head>
+
+    <body>
+        <div class="form" action="datos.php">
+            <h2>Formulario PHP</h2>
+            <form class="form" action="./datos.php" method="post">
+                <label for="name">Nombre:</label>
+                <input class="text" type="text" id="name" name="name"><br><br><br>
+
+                <label for="tel">Telefono:</label>
+                <input class="text" type="text" id="tel" name="tel"><br><br><br>
+
+                <label for="email">Email:</label>
+                <input class="text" type="text" id="email" name="email"><br><br><br>
+
+                <label for="msg">Mensaje:</label><br>
+                <textarea class="text_large" type="text" id="msg" name="msg" rows="5" cols="50"></textarea><br><br><br>
+
+                <input class="delete" type="reset" value="Borrar">
+                <input class="send" type="submit" value="Enviar">
+            </form>
+        </div>
+    </body>

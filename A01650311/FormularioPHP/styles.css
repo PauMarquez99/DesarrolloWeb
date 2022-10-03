@@ -1,0 +1,54 @@
+body{
+    width: 40%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+label{
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+}
+
+input[type=text], textarea{
+    background-color: white;
+    border: 2px solid lightgrey;
+    border-radius: 4px;
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px;
+}
+
+input[type=text]{
+    width: 85%;
+}
+
+textarea{
+    width: 100%;
+}
+
+input[type=submit]{
+    color: white;
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 4px;
+    margin-top: 6px;
+}
+
+input[type=reset]{
+    color: black;
+    background-color: lightgrey;
+    border: 2px solid lightgrey;
+    border-radius: 4px;
+    margin-top: 6px;
+}
+
